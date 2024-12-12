@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Portal - Домашние кошки</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #00bcd4;
+        }
+        .logo {
+            height: 50px;
+        }
+        .login-panel {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .group-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .group-card img {
+            border-radius: 10px;
+        }
+        .btn-green {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .btn-green:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <!-- Logo and title -->
+        <a class="navbar-brand" href="#">
+            <img src="/img/images.png" alt="Logo" class="logo">
+            <span class="text-white">птичка.ру</span>
+            <small class="text-white">зоопортал</small>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Общение</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Объявления</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Люди</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Вопрос-ответ</a></li>
+            </ul>
+        </div>
+
+        <!-- Write about a pet button -->
+        <a href="#" class="btn btn-success">Написать о питомце</a>
+    </div>
+</nav>
+
+<div class="bg-light py-3">
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <div>
+                <a href="#" class="text-decoration-none me-3">Кошки</a>
+                <a href="#" class="text-decoration-none me-3">Собаки</a>
+                <a href="#" class="text-decoration-none me-3">Грызуны</a>
+                <a href="#" class="text-decoration-none me-3">Рыбки</a>
+                <a href="#" class="text-decoration-none me-3">Птицы</a>
+                <a href="#" class="text-decoration-none me-3">Кролики</a>
+                <a href="#" class="text-decoration-none">Все группы</a>
+            </div>
+            <div>
+                <input type="text" class="form-control d-inline-block w-auto" placeholder="Поиск по сайту">
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container my-4">
+    <div class="row">
+        <!-- Login Panel -->
+        <div class="col-md-3">
+            <div class="login-panel">
+                <h5>Вход <a href="#" class="text-primary">Регистрация</a></h5>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email или логин">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Пароль">
+                    </div>
+                    <a href="#" class="text-secondary d-block mb-3">Забыли пароль?</a>
+                    <button type="submit" class="btn btn-primary w-100">Войти</button>
+                    <div class="text-center mt-3">Вход через соц сети:</div>
+                    <div class="d-flex justify-content-center gap-3 mt-2">
+                        <i class="bi bi-vk fs-4"></i>
+                        <i class="bi bi-odnoklassniki fs-4"></i>
+                        <i class="bi bi-envelope fs-4"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Group Card -->
+        <div class="col-md-9">
+            <div class="group-card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/img/image2.png" alt="Cat" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Домашние кошки</h4>
+                        <p>
+                            <span class="me-3"><i class="bi bi-people"></i> 22594</span>
+                            <span class="me-3"><i class="bi bi-chat"></i> 6564</span>
+                            <span>Вступление: <strong>открытое</strong></span>
+                        </p>
+                        <p>Всё про кошек: общайтесь и принимайте участие в обсуждении интересных тем про кошек, читайте советы по уходу и содержанию котов. Делитесь забавными историями и фото с котиками, читайте блоги владельцев.</p>
+                        <button class="btn btn-green me-2">Добавить запись</button>
+                        <button class="btn btn-primary">Подписаться на группу</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-lg-3 col-md-4 mb-4">
+            <div class="card mb-4">
+                <img src="/img/images4.png" class="card-img-top" alt="King Charles Spaniel">
+                <div class="card-body">
+                    <h5 class="card-title">Кинг-чарльз-спаниель</h5>
+                    <a href="#" class="card-link">Кому подойдет кинг-чарльз-спаниель?</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ваши питомцы</h5>
+                    <img src="/img/images5.png" class="img-fluid rounded mb-3" alt="Ваши питомцы">
+                    <a href="#" class="card-link">Дневник питомца</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-6 col-md-8">
+            <h3 class="mb-3">Новые записи о домашних кошках</h3>
+            <p class="text-muted">Сортировать записи по: 
+                <a href="#" class="text-decoration-none">дате создания</a>, 
+                <a href="#" class="text-decoration-none">рейтингу</a>, 
+                <a href="#" class="text-decoration-none">числу комментариев</a>
+            </p>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Предпраздничное меню. Первое блюдо.</h4>
+                    <p class="text-muted">Игорь Хаймин в рубрике Жизнь с котами и кошками позавчера в 14:32</p>
+                    <img src="/img/images6.png" class="img-fluid rounded" alt="Cat">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-lg-3">
+            <h5 class="mb-3">Породы кошек</h5>
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3">
+                    <img src="/img/images6.png" alt="Абиссинские кошки" class="me-3 rounded-circle" style="width: 50px; height: 50px;">
+                    <a href="#" class="text-decoration-none">Абиссинские кошки</a>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                    <img src="/img/images4.png" alt="Американская короткошерстная кошка" class="me-3 rounded-circle" style="width: 50px; height: 50px;">
+                    <a href="#" class="text-decoration-none">Американская короткошерстная кошка</a>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                    <img src="/img/images5.png" alt="Американский керл" class="me-3 rounded-circle" style="width: 50px; height: 50px;">
+                    <a href="#" class="text-decoration-none">Американский керл</a>
+                </li>
+                <!-- Add more cat breeds as needed -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
